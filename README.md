@@ -2,13 +2,13 @@
 ### Pertemuan 14 — Scalability & Production Deployment
 Mata Kuliah Sistem Rekomendasi | Sub-CPMK 2.3 & 4.2
 
----
+
 
 ## Deskripsi
 
 Project ini adalah implementasi sistem rekomendasi produk berbasis content-based filtering menggunakan cosine similarity, di-deploy sebagai REST API dengan FastAPI dan dilengkapi tampilan web interaktif.
 
----
+
 
 ## Fitur
 
@@ -21,11 +21,11 @@ Project ini adalah implementasi sistem rekomendasi produk berbasis content-based
 - Load test dengan Locust
 - Siap containerisasi dengan Docker
 
----
+
 
 ## Struktur Project
 
-```
+
 ├── main.py                  # API FastAPI
 ├── model.py                 # Logika rekomendasi
 ├── requirements.txt         # Dependencies
@@ -37,9 +37,9 @@ Project ini adalah implementasi sistem rekomendasi produk berbasis content-based
 └── tests/
     ├── test_model.py        # Unit test
     └── locustfile.py        # Load test
-```
 
----
+
+
 
 ## Cara Menjalankan
 
@@ -78,7 +78,7 @@ uvicorn main:app --reload
 
 Buka browser ke http://127.0.0.1:8000
 
----
+
 
 ## Endpoint API
 
@@ -103,7 +103,7 @@ Contoh response:
 }
 ```
 
----
+
 
 ## Testing
 
@@ -123,7 +123,7 @@ locust -f tests/locustfile.py --host=http://localhost:8000
 
 Buka http://localhost:8089, set jumlah user dan klik Start.
 
----
+
 
 ## Docker
 
