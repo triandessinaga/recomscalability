@@ -1,0 +1,19 @@
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.env
+.DS_Store
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.locust/
+.vscode/
+
+# File internal dosen
+materi_slide.md
+panduan_praktikum.md
+panduan_praktikum.pdf
+panduan_simple.md
+alur_video.md
